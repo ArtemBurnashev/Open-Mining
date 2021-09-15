@@ -92,12 +92,15 @@ var ranges = document.querySelectorAll(".income-row__range"),
     pay = document.querySelector(".income__result__value--pay");
 
 contractPrice(price, inputs);
+activeCrrency(document.querySelector('#btc .check'));
+
 
 ranges.forEach(function (item, index) {
   let ie = true;
   item.addEventListener("input", function () {
     ie = false;
     range(item);
+    addPayoutCurrency(pay, inputs);
     InputValue(inputs[index], item);
     contractPrice(price, inputs);
    
@@ -111,12 +114,8 @@ ranges.forEach(function (item, index) {
   }
   
 
-  item.addEventListener('mouseup', function () {
-    request(pay, inputs);
-  });
-
   item.addEventListener('touchend', function () {
-    request(pay, inputs);
+    addPayoutCurrency(pay, inputs);
   });
 });
 
@@ -140,7 +139,7 @@ list.addEventListener("click", function (event) {
     addActive(checkmark);
     removeActive(select);
     removeActive(list);
-    request(pay, inputs);
+    addPayoutCurrency(pay, inputs);
 
     currency(select, resultCurrency);
     currency(select, spanCurrency);
@@ -158,7 +157,7 @@ function range(item) {
   var color = "linear-gradient(90deg, #87B645 0%, #87B645 " + value + "%, #d3d3d3 " + value + "%, #d3d3d3 100%)";
   item.style.background = color;
 }
-function activeCrypt(id) {
+function activeCrrency(id) {
   addActive(id);
 }
 function InputValue(input, elem) {
@@ -190,9 +189,13 @@ function prettify(num) {
   return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
 }
 
-function request(elem, input) {
 
-  fetch("https://api.nomics.com/v1/currencies/ticker?key=f85bec304dca51caaf857f737e9603d96e299567&ids=BTC,LTC,ETH,RPL&interval=1d&convert=RUB&per-page=100&page=1", {mode: 'cors'}).then(function (response) {
+//-------------------------------------------------------------------------------------
+//Since github pages only displays static files, the Fetch request will not be active.
+//-------------------------------------------------------------------------------------
+
+/* function request(elem, input) {
+  fetch("https://api.nomics.com/v1/currencies/ticker?key=f85bec304dca51caaf857f737e9603d96e299567&ids=BTC,LTC,ETH,RPL&interval=1d&convert=RUB&per-page=100&page=1").then(function (response) {
     return response.json();
   }).then(function (data) {
     var payLastChild = elem.querySelector(".income__curren-days").textContent;
@@ -232,11 +235,56 @@ function request(elem, input) {
   }).catch(function (error) {
     return console.error(error);
   });
-}
-request(pay, inputs);
+} */
 
-function resultPay(input, data, q) {
-  return Math.pow(parseInt(input[0].value) * parseInt(input[1].value), 2) / data.price / 4000;
+
+function request(elem, input){
+  var  dataPrice = {"BTC": 3510878.17, "ETH":257995.22, "LTC":13495.63, "RPL":2282.74};
+  var payLastChild = elem.querySelector(".income__curren-days").textContent;
+  var result = void 0;
+  
+  switch (payLastChild) {
+    case "BTC":
+      result = resultPay(input,  dataPrice["BTC"]);
+      break;
+    case "ETH":
+      result = resultPay(input,  dataPrice["ETH"]);
+      break;
+    case "LTC":
+      result = resultPay(input,  dataPrice["LTC"]);
+      break;
+    case "RPL":
+      result = resultPay(input,  dataPrice["RPL"]);
+      break;
+  }
+
+ return result.toFixed(4);
+  
+}
+
+function addPayoutCurrency(elem, input){
+
+  var value1 = parseInt(input[0].value);
+  var value2 = parseInt(input[1].value);
+
+  if (isNaN(value1) || isNaN(value2)) {
+    elem.firstChild.textContent = 0 + " ";
+  } else {
+    elem.firstChild.textContent = function (number) {
+      var parts = number.toString().split(".");
+
+      if (parseInt(parts[0].length) > 3) {
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+      return parts.join(".") + " ";
+    }(request(elem, input));
+  }
+}
+
+addPayoutCurrency(pay, inputs);
+
+function resultPay(input, data) {
+  return Math.pow(parseInt(input[0].value) * parseInt(input[1].value), 2) / data / 4000;
 }
 
 /* Accordion */
