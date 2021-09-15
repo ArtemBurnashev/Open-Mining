@@ -96,7 +96,7 @@ activeCrrency(document.querySelector('#btc .check'));
 
 
 ranges.forEach(function (item, index) {
-  let ie = true;
+  var ie = true;
   item.addEventListener("input", function () {
     ie = false;
     range(item);
@@ -141,8 +141,8 @@ list.addEventListener("click", function (event) {
     removeActive(list);
     currency(select, resultCurrency);
     currency(select, spanCurrency);
-    select.querySelector(".check").removeChild();
-     addPayoutCurrency(pay, inputs);
+    addPayoutCurrency(pay, inputs);
+    select.querySelector(".check").remove();
   }
 });
 
