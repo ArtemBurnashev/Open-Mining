@@ -139,11 +139,10 @@ list.addEventListener("click", function (event) {
     addActive(checkmark);
     removeActive(select);
     removeActive(list);
-    addPayoutCurrency(pay, inputs);
-
     currency(select, resultCurrency);
     currency(select, spanCurrency);
-    select.querySelector(".check").remove();
+    select.querySelector(".check").removeChild();
+     addPayoutCurrency(pay, inputs);
   }
 });
 
