@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script defer src="./polyfills/nodelist-foreach.js"></script>
+    <script defer src="./polyfills/polyfill.min.js"></script>
+    <script defer src="./polyfills/fetch.umd.min.js"></script>
+    <script defer src="./polyfills/classList_polyfill_ie.js"></script>
+    <script defer src="./plugins/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    
+  
+
+    <title>Open Mining</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#intro" class="header__logo">
+            <img src="./img/icon/logo.svg" alt="Логотип">
+            <div class="header__logo__text">
+                Open Mining
+            </div>
+        </a>
+        <nav class="menu">
+            <div class="menu__logo">
+                <img src="./img/icon/logo.svg" alt="Логотип" class="menu__img">
+                <div class="header__logo__text">
+                    Open Mining
+                </div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu-item"><a href="#banner">О проекте</a></li>
+                <li class="menu-item"><a href="#income">Тарифы</a></li>
+                <li class="menu-item menu-item--faq"><a href="#faq">Faq</a></li>
+                <li class="menu-item"><a href="#footer">Контакты</a></li>
+            </ul>
+            <button class="close__menu">
+                <svg class="svg-icon"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M574.293333 512L810.666667 748.373333V810.666667h-62.293334L512 574.293333 275.626667 810.666667H213.333333v-62.293334L449.706667 512 213.333333 275.626667V213.333333h62.293334L512 449.706667 748.373333 213.333333H810.666667v62.293334L574.293333 512z" fill="" /></svg>
+            </button>
+        </nav>
+        <button class="menu-burger">
+           <svg fill="none" viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3 7C3 6.44771 3.44772 6 4 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H4C3.44772 8 3 7.55229 3 7Z"
+                    fill="black" />
+                <path
+                    d="M3 14C3 13.4477 3.44772 13 4 13H24C24.5523 13 25 13.4477 25 14C25 14.5523 24.5523 15 24 15H4C3.44772 15 3 14.5523 3 14Z"
+                    fill="black" />
+                <path
+                    d="M4 20C3.44772 20 3 20.4477 3 21C3 21.5523 3.44772 22 4 22H24C24.5523 22 25 21.5523 25 21C25 20.4477 24.5523 20 24 20H4Z"
+                    fill="black" />
+            </svg>
+        </button>
+        <div class="header__btn"><a class="btn-link" href="">
+                Вход
+            </a>
+        </div>
+    </header>
+
+    <section class="intro" id="intro">
+        <img class="intro__graph" src="./img/Intro/graph-1.png" alt="График1">
+        <img class="intro__graph" src="./img/Intro/graph-2.png" alt="График2">
+        <div class="container">
+
+            <h1 class="intro__title">
+                Снижение рисков связанных с майнингом
+                по максимуму
+            </h1>
+            <div class="intro__subtitle">
+                Честность майнинга заложена в архитектуре
+            </div>
+            <div class="intro__btns">
+                <a href="#" class="intro__btn intro__btn--earn">
+                    <span>Начать зарабатывать</span>
+                </a>
+                <a href="#banner" class="intro__btn intro__btn--know">
+                    <span>Узнать больше</span>
+                </a>
+            </div>
+
+            <div class="intro__icon1"><img src="./img/icon/1.svg" alt="Иконка"></div>
+            <div class="intro__icon2"><img src="./img/icon/2.svg" alt="Иконка"></div>
+            <div class="intro__icon3"><img src="./img/icon/3.svg" alt=""></div>
+            <div class="intro__icon4"><img src="./img/icon/4.svg" alt=""></div>
+
+        </div>
+    </section>
+
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="banner__img">
+                <img src="./img/Banner/notebook.png" alt="Notebook" class="banner__notebook">
+            </div>
+            <div class="banner__inner">
+                <h2 class="banner__title">
+                    open mining
+                </h2>
+                <div class="banner__subtitle">
+                    — это прозрачный заработок на майнинге криптовалют, а самое главное — мы находимся в России.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container swiper-container--info">
+            <div class="info__wrapper swiper-wrapper">
+                <div class="info-item  swiper-slide">
+                    <div class="info-item__logo">
+                        <img src="./img/Info/1.png" alt="">
+                    </div>
+
+                    <h3 class="info-item__title">
+                        Все риски берем на себя
+                    </h3>
+
+                    <div class="info-item__subtitle">
+                        Покупка оборудование, его транспортировка, размещение, оплата электричества, ремонт
+                        и сопровождение
+                        — все эти риски мы берем на себя
+                    </div>
+
+                </div>
+                <div class="info-item  swiper-slide">
+                    <div class="info-item__logo">
+                        <img src="./img/Info/2.png" alt="">
+                    </div>
+
+                    <h3 class="info-item__title">
+                        Гарантия честности
+                        схемы работы
+                    </h3>
+
+                    <div class="info-item__subtitle">
+                        Вы покупаете только мощность оборудования — хешрайт, так заключается контракт.
+                        Купленная мощность направляется
+                        на один из пулов, который вы выбираете. Сторонний пул гарантирует прозрачность, честность
+                        и простоту схемы
+                    </div>
+
+                </div>
+
+                <div class="info-item  swiper-slide">
+                    <div class="info-item__logo">
+                        <img src="./img/Info/3.png" alt="">
+                    </div>
+
+                    <h3 class="info-item__title">
+                        Никаких скрытых платежей
+                    </h3>
+
+                    <div class="info-item__subtitle">
+                        Никаких ежедневных списаний
+                        за обслуживание и электроэнергию.
+                        Короткие контракты на 3 месяца, минимизируют риски, что майнинг станет невыгоден вследствие
+                        роста сложности, халвинга и падение курсов
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage">
+
+        <div class="container swiper-container--advantage">
+            <h2 class="advantage__title">
+                Преимущества облачного майнинга
+            </h2>
+            <div class="advantage__wrapper swiper-wrapper">
+                <div class="advantage-item advantage-item--common swiper-slide">
+                    <div class="advantage-item__inner">
+                        <div class="advantage-item__icon">
+                            <svg width="28" height="54" viewBox="0 0 33 59" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.7195 42.0025C11.7721 38.9042 12.1273 36.4567 12.7849 34.6602C13.4425 32.8637 14.7841 30.8719 16.8095 28.6849L21.9785 23.4125C24.1881 20.9391 25.2929 18.2834 25.2929 15.4454C25.2929 12.7116 24.5695 10.5766 23.1227 9.04047C21.676 7.47828 19.5716 6.69719 16.8095 6.69719C14.1264 6.69719 11.9694 7.40018 10.3385 8.80614C8.70761 10.2121 7.89216 12.0997 7.89216 14.469H0.592529C0.645139 10.2512 2.15768 6.85341 5.13014 4.27581C8.1289 1.67218 12.022 0.370361 16.8095 0.370361C21.7812 0.370361 25.648 1.69822 28.41 4.35392C31.1984 6.98359 32.5925 10.6026 32.5925 15.2111C32.5925 19.7674 30.4618 24.2587 26.2004 28.6849L21.8996 32.9028C19.9793 35.0117 19.0192 38.045 19.0192 42.0025H11.7195ZM11.4039 54.3828C11.4039 53.2111 11.759 52.2348 12.4692 51.4537C13.2058 50.6465 14.2843 50.243 15.7047 50.243C17.1252 50.243 18.2037 50.6465 18.9402 51.4537C19.6768 52.2348 20.0451 53.2111 20.0451 54.3828C20.0451 55.5544 19.6768 56.5308 18.9402 57.3119C18.2037 58.0669 17.1252 58.4444 15.7047 58.4444C14.2843 58.4444 13.2058 58.0669 12.4692 57.3119C11.759 56.5308 11.4039 55.5544 11.4039 54.3828Z"
+                                    fill="#E7E9E8" />
+                            </svg>
+                        </div>
+                        <div class="advantage-item__title">
+                            <p>Обычный майнинг</p>
+                        </div>
+                        <img src="./img/Advantage/icon1.svg" alt="Иконка" class="advantage-item__img">
+                    </div>
+                    <ul class="advantage-item__list">
+                        <li class="advantage-item__item">
+                            <p>Ожидаете поставки майнеров и теряете драгоценное время.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>
+                                Тратите время на подготовку оборудования
+                                к работе.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>
+                                Отсутствие достаточного охлаждения снижает эффективность оборудования. Велик риск
+                                перегревания и
+                                поломки.
+                                Результат – дополнительные затраты и потеря времени.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Высокая стоимость электроэнергии.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>
+                                Необходимость уделять много времени обслуживанию оборудование. Результат поломок –
+                                потеря
+                                времени
+                                и упущенная прибыль.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Шум от оборудования и избыточное тепло.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Дополнительные расходы на обеспечение безопасности майнеров.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Возможны дополнительные траты на оплату таможенных пошлин при поставке оборудования.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>
+                                Необходимость в специальных знаниях
+                                для настройки и поддержания работоспособности майнеров.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="advantage-item advantage-item--cloudy swiper-slide">
+                    <div class="advantage-item__inner">
+                        <div class="advantage-item__icon">
+                            <svg width="54" height="40" viewBox="0 0 60 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M51.5947 2.23622C53.3955 0.241556 56.4194 0.133756 58.3488 1.99545C60.2782 3.85714 60.3824 6.98333 58.5817 8.978L25.1311 46.0306C23.3839 47.9658 20.4718 48.1335 18.5277 46.4107L1.80238 31.5896C-0.201435 29.814 -0.433494 26.6951 1.28406 24.6235C3.00162 22.5519 6.01838 22.312 8.0222 24.0877L21.2696 35.8268L51.5947 2.23622Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="advantage-item__title">
+                            Облачный майнинг
+                        </div>
+                        <img src="./img/Advantage/icon2.svg" alt="Иконка" class="advantage-item__img">
+                    </div>
+                    <ul class="advantage-item__list">
+                        <li class="advantage-item__item">
+                            <p>Оборудование всегда готово к работе. Просто выбирайте контракт и начинайте зарабатывать.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Просто и удобно. Не нужно ничего настраивать и иметь IT-навыки.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Оптимальные промышленные условия обеспечивают максимальную производительность майнеров.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>
+                                Низкая стоимость электроэнергии, значит отличные цены
+                                на всех контрактах.
+                            </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Бесперебойная работа. 24/7/365 контроль за работой майнеров. Высочайшие стандарты
+                                безопасности. </p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Тишина и спокойствие.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Гарантия безопасности майнеров.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Отсутствие непредвиденных расходов. Вы платите только один раз и только ту сумму, которая
+                                указана в контракте.</p>
+                        </li>
+                        <li class="advantage-item__item">
+                            <p>Квалифицированные специалисты.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="income" id="income">
+        <img class="income__graph" src="./img/income/graph-1.png" alt="График1">
+        <img class="income__graph" src="./img/income/graph-2.png" alt="График2">
+        <img class="income__graph" src="./img/income/graph-1.png" alt="График3">
+        <div class="container">
+            <h2 class="income__title">
+                Расчитайте свой доход
+            </h2>
+            <div class="income__wrapper">
+                <div class="income-row income-row--inp">
+                    <div class="income-row__form">
+                        <label for="input-1" class="income-row__inp-label">Мощность, Th/ s</label>
+                        <input type="text" id="input-1" name='power' class="income-row__input" value="200" disabled>
+                        <input type="range" min="10" max="1000" step="10" id="th-range-1" value="200"
+                            class="income-row__range income-row__range--power">
+                        <label for="th-range-1" class='income-row__rng-label'>
+                            <span>10 Th/ s </span>
+                            <span>1000 Th/ s </span>
+                        </label>
+                    </div>
+                    <div class="income-row__form">
+                        <label for="input-2" class="income-row__inp-label">Срок контракта, дни</label>
+                        <input type="text" id="input-2" name='power' class="income-row__input" value="180" disabled>
+                        <input type="range" min="90" max="365" step="5" id="th-range-2" value="180"
+                            class="income-row__range income-row__range--days">
+                        <label for="th-range-2" class='income-row__rng-label'>
+                            <span>90 дней</span>
+                            <span>365 дней</span>
+                        </label>
+                    </div>
+
+                    <div class="income-row__form select">
+                        <label class="income-row__sel-label">Вид валюты</label>
+                        <button class="income-row__select">
+                            <svg width="32" height="32" viewBox="0 0 32 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M31.4242 12.3625C33.4768 20.9122 28.2099 29.5069 19.6602 31.5596C11.1104 33.6122 2.51573 28.3453 0.463125 19.7956C-1.58948 11.2458 3.67736 2.65113 12.2271 0.59852C20.7768 -1.45409 29.3715 3.81276 31.4242 12.3625Z"
+                                    fill="#FFC246" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.361 12.1049C22.159 9.85373 20.2378 9.07194 17.7996 8.82862L17.8216 5.71575L15.8974 5.69085L15.871 8.74262L14.3727 8.73978L14.387 5.68055L12.504 5.65613L12.482 8.76899L8.68188 8.74905L8.7063 10.7735C8.7063 10.7735 10.0982 10.7604 10.0738 10.787C10.5931 10.7421 11.0609 11.1082 11.1475 11.6272L11.1499 20.1829C11.1385 20.3615 11.0572 20.5279 10.9238 20.6455C10.7903 20.763 10.6158 20.822 10.4387 20.8094L8.97184 20.8094L8.58305 23.078L11.0421 23.1092L12.3926 23.1371L12.3609 26.2523L14.2416 26.2669L14.2636 23.1541L15.7977 23.2208L15.7757 26.3337L17.6685 26.3558L17.6884 23.1916C20.8652 23.0505 23.0879 22.2682 23.3827 19.266C23.6225 16.8466 22.5362 15.7401 20.707 15.2988C21.9143 14.7391 22.5933 13.4279 22.361 12.1049ZM19.6798 18.8394C19.6631 21.2052 15.6378 20.8457 14.374 20.8797L14.4034 16.7293C15.6404 16.712 19.6512 16.3706 19.641 18.8487L19.6798 18.8394ZM18.8333 12.9207C18.8254 15.0668 15.4702 14.764 14.4148 14.7687L14.398 10.9815C15.4678 10.994 18.8103 10.6887 18.7945 12.93L18.8333 12.9207Z"
+                                    fill="white" />
+                            </svg>
+
+                            <span class="income__curren">BTC</span>
+                        </button>
+                        <ul class="income-row__list">
+                            <li class="income-row__curren" id="btc">
+                                <svg width="32" height="32" viewBox="0 0 32 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M31.4242 12.3625C33.4768 20.9122 28.2099 29.5069 19.6602 31.5596C11.1104 33.6122 2.51573 28.3453 0.463125 19.7956C-1.58948 11.2458 3.67736 2.65113 12.2271 0.59852C20.7768 -1.45409 29.3715 3.81276 31.4242 12.3625Z"
+                                        fill="#FFC246" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.361 12.1049C22.159 9.85373 20.2378 9.07194 17.7996 8.82862L17.8216 5.71575L15.8974 5.69085L15.871 8.74262L14.3727 8.73978L14.387 5.68055L12.504 5.65613L12.482 8.76899L8.68188 8.74905L8.7063 10.7735C8.7063 10.7735 10.0982 10.7604 10.0738 10.787C10.5931 10.7421 11.0609 11.1082 11.1475 11.6272L11.1499 20.1829C11.1385 20.3615 11.0572 20.5279 10.9238 20.6455C10.7903 20.763 10.6158 20.822 10.4387 20.8094L8.97184 20.8094L8.58305 23.078L11.0421 23.1092L12.3926 23.1371L12.3609 26.2523L14.2416 26.2669L14.2636 23.1541L15.7977 23.2208L15.7757 26.3337L17.6685 26.3558L17.6884 23.1916C20.8652 23.0505 23.0879 22.2682 23.3827 19.266C23.6225 16.8466 22.5362 15.7401 20.707 15.2988C21.9143 14.7391 22.5933 13.4279 22.361 12.1049ZM19.6798 18.8394C19.6631 21.2052 15.6378 20.8457 14.374 20.8797L14.4034 16.7293C15.6404 16.712 19.6512 16.3706 19.641 18.8487L19.6798 18.8394ZM18.8333 12.9207C18.8254 15.0668 15.4702 14.764 14.4148 14.7687L14.398 10.9815C15.4678 10.994 18.8103 10.6887 18.7945 12.93L18.8333 12.9207Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="income__curren">BTC</span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+
+                            </li>
+                            <li  class="income-row__curren" id="eth">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity=".9">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31.864 16.0791C31.864 24.8718 24.7363 31.9995 15.9436 31.9995C7.15091 31.9995 0.0231934 24.8718 0.0231934 16.0791C0.0231934 7.28641 7.15091 0.158691 15.9436 0.158691C24.7363 0.158691 31.864 7.28641 31.864 16.0791Z"
+                                            fill="#5470DE" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.13696 16.2439L16 20.8762L23.863 16.2439L16 3.20007L8.13696 16.2439ZM8.13697 17.7677L16 28.8001L23.863 17.7677L16 22.3393L8.13697 17.7677Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+
+                                <span class="income__curren">ETH</span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+
+                            </li>
+                            <li  class="income-row__curren" id="ltc">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32C7.1632 32 0 24.8368 0 16ZM8.46161 24.1984H23.7736L24.732 20.4304H15.4656L16.6176 15.8976L19.1048 14.9744L19.8008 12.2344L17.3144 13.1576L19.1432 5.9624H13.0968L10.64 15.636L8.51121 16.4256L7.81521 19.1656L9.94081 18.376L8.46161 24.1984Z"
+                                        fill="#B6B7BA" />
+                                </svg>
+
+                                <span class="income__curren">LTC</span>
+
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </li>
+                            <li  class="income-row__curren" id="rpl">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity=".9">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 32C7.16336 32 0 24.8366 0 16C0 7.16336 7.16336 0 16 0C24.8366 0 32 7.16336 32 16C32 24.8366 24.8366 32 16 32Z"
+                                            fill="#1786C4" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M27.158 6.40002H23.9182L18.7977 11.6452C17.2523 13.2281 14.7469 13.2281 13.2016 11.6452L8.0811 6.40002H4.8413L11.5817 13.3045C14.0217 15.8038 17.9776 15.8038 20.4175 13.3045L27.158 6.40002ZM4.80005 25.6H8.03986L13.202 20.3122C14.7473 18.7293 17.2527 18.7293 18.798 20.3122L23.9602 25.6H27.2L20.418 18.6529C17.978 16.1536 14.0221 16.1536 11.5821 18.6529L4.80005 25.6Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                <span class="income__curren">RPL</span>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="income-row income-row--res">
+                    <div class="income__result">
+                        <div class="income__result__price">
+                            <div class="income__result__value">180 000<span>руб.</span></div>
+
+                            <div class="income__result__subtext">
+                                Стоимость контракта
+                            </div>
+                        </div>
+                        <div class="income__result__currency">
+                            <div class="income__result__value">
+                                BTC
+                            </div>
+                            <div class="income__result__subtext">
+                                Валюта
+                            </div>
+                        </div>
+                    </div>
+                    <div class="income__result income__result--days">
+                        <div class="income__result__currency">
+                            <div class="income__result__value income__result__value--pay">
+                                0,99 <span class="income__curren-days">BTC</span>
+                            </div>
+                            <div class="income__result__subtext">
+                                Выплата за период
+                            </div>
+
+                        </div>
+                        <div class="income__result__price income__result__price--service">
+                            <div class="income__result__value">0 <span>руб.</span></div>
+
+                            <div class="income__result__subtext">
+                                Обслуживание
+                            </div>
+                        </div>
+ 
+                    </div>
+                    <div class="income-row__btn">
+                        <a href="./" class="income-row__link">Заключить контракт</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="income__frame">
+                <iframe scrolling='no' src="https://widget.nomics.com/assets/BTC/RUB/"></iframe>
+                <iframe scrolling='no' src="https://widget.nomics.com/assets/ETH/RUB/"></iframe>
+                <iframe scrolling='no' src="https://widget.nomics.com/assets/LTC/RUB/"></iframe>
+                <iframe scrolling='no' src="https://widget.nomics.com/assets/RPL/RUB/"></iframe>
+            </div>
+            <div class="income__part">
+                Наши партнёры
+                <a href="https://nomics.com/" target="_blank">nomics.com</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="guarantees">
+        <img src="./img/Guarantees/spot.png" alt="Фон" class="guarantees__spot">
+        <div class="container">
+            <h2 class="guarantees__title">
+                Гарантии
+            </h2>
+
+            <div class="guarantees__wrapper">
+                <div class="guarantees-item guarantees-item--1">
+                    <div class="guarantees-item__number">
+                        <svg width="160" height="112" viewBox="0 0 160 112" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <path
+                                    d="M49.5215 112C79.3941 112 99.3624 87.4033 99.3624 56C99.3624 24.2873 79.3941 0 49.841 0C20.1281 0 0 24.5967 0 56C0 87.7127 19.6488 112 49.5215 112ZM49.841 90.4972C34.9845 90.4972 25.24 75.8011 25.24 56C25.24 35.8895 34.8248 21.5028 49.5215 21.5028C64.2182 21.5028 74.1225 36.3536 74.1225 56C74.1225 75.9558 64.6974 90.4972 49.841 90.4972Z"
+                                    fill="white" />
+                                <path
+                                    d="M135.719 110.144H160V1.08287H143.227L111.118 10.3646L116.229 29.8563L135.719 25.2155V110.144Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="guarantees-item__title">
+                        Наша компания зарегистрирована
+                        не в офшорных зонах
+                    </div>
+                    <div class="guarantees-item__text">
+                        Мы являемся резидентами Российской Федерации, у нас есть собственная площадка для размещения
+                        оборудования в Иркутской области.
+                    </div>
+                </div>
+                <div class="guarantees-item guarantees-item--2">
+                    <div class="guarantees-item__number">
+                        <svg width="192" height="112" viewBox="0 0 192 112" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <path
+                                    d="M48.245 112C77.3476 112 96.8013 87.4033 96.8013 56C96.8013 24.2873 77.3476 0 48.5563 0C19.6093 0 0 24.5967 0 56C0 87.7127 19.1424 112 48.245 112ZM48.5563 90.4972C34.0828 90.4972 24.5894 75.8011 24.5894 56C24.5894 35.8895 33.9271 21.5028 48.245 21.5028C62.5629 21.5028 72.2119 36.3536 72.2119 56C72.2119 75.9558 63.0298 90.4972 48.5563 90.4972Z"
+                                    fill="white" />
+                                <path
+                                    d="M111.384 110.144H192V89.5691H144.533L162.275 75.9558C181.573 61.105 190.911 52.1326 190.911 34.0331C190.911 13.4586 175.97 0.309388 153.404 0.309388C133.95 0.309388 123.523 8.19889 112.785 22.7403L129.593 36.1989C137.685 26.2983 143.444 21.6575 151.848 21.6575C160.407 21.6575 166.477 26.6077 166.477 35.7348C166.477 44.7072 161.185 50.5856 147.646 61.7238L111.384 91.2707V110.144Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="guarantees-item__title">
+                        Подтверждено публичным пулом pool.in
+
+                    </div>
+                    <div class="guarantees-item__text">
+                        Мы продаем контракты
+                        на облачный майнинг из уже имеющегося оборудования.
+                    </div>
+                    <a href="https://www.poolin.com/" target="_blank" class="guarantees-item__link">ссылка</a>
+                </div>
+                <div class="guarantees-item guarantees-item--3">
+                    <div class="guarantees-item__number">
+                        <svg width="192" height="112" viewBox="0 0 192 112" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <path
+                                    d="M48.4019 112C77.5992 112 97.1161 87.4033 97.1161 56C97.1161 24.2873 77.5992 0 48.7142 0C19.673 0 0 24.5967 0 56C0 87.7127 19.2046 112 48.4019 112ZM48.7142 90.4972C34.1936 90.4972 24.6694 75.8011 24.6694 56C24.6694 35.8895 34.0375 21.5028 48.4019 21.5028C62.7664 21.5028 72.4468 36.3536 72.4468 56C72.4468 75.9558 63.2348 90.4972 48.7142 90.4972Z"
+                                    fill="#75ACFE" />
+                                <path
+                                    d="M152.654 112C177.011 112 192 96.9945 192 76.5746C192 56.1547 177.479 48.4199 162.647 45.9447L190.283 19.8011V1.85635H116.431V22.2762H159.368L133.293 48.2652L137.04 63.4254H147.033C160.461 63.4254 168.424 68.3757 168.424 77.1934C168.424 85.547 162.022 90.6519 152.966 90.6519C141.881 90.6519 134.074 86.011 126.579 77.6575L110.029 93.2818C119.397 104.265 132.981 112 152.654 112Z"
+                                    fill="#75ACFE" />
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="guarantees-item__title">
+                        Никаких скрытых
+                        действий
+                    </div>
+                    <div class="guarantees-item__text">
+                        Вся финансовая отчетность
+                        о нашей компании опубликована
+                        в свободном доступе. Вы можете её найти по ИНН.
+                    </div>
+
+                    <a href="#" class="guarantees-item__link">ссылка</a>
+                </div>
+
+
+            </div>
+            <div class="guarantees__poss">
+                <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.6962 0.762713L0.203933 29.7118C-0.3755 30.7288 0.348791 32 1.50766 32H34.4924C35.6513 32 36.3754 30.7287 35.7961 29.7118L19.3036 0.762713C18.7242 -0.254238 17.2756 -0.254238 16.6962 0.762713V0.762713Z"
+                        fill="#2B69DD" />
+                    <path
+                        d="M18 19.5C17.1303 19.5 16.4123 18.805 16.3648 17.9172L16.003 11.1563C15.9404 9.98489 16.8525 9 18 9C19.1475 9 20.0596 9.98503 19.997 11.1563L19.6352 17.9172C19.5877 18.805 18.8697 19.5 18 19.5Z"
+                        fill="#FBAC00" />
+                    <path
+                        d="M18 27.5C19.1046 27.5 20 26.7165 20 25.75C20 24.7835 19.1046 24 18 24C16.8954 24 16 24.7835 16 25.75C16 26.7165 16.8954 27.5 18 27.5Z"
+                        fill="#FBAC00" />
+                </svg>
+                <div class="guarantees__link">
+                    Наши возможности:
+                    <a href="https://www.poolin.com/my/" target="_blank">https://www.poolin.com/my/9053220/b...</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="faq__title">
+                faq
+            </h2>
+
+            <img src="./img/FAQ/planet.png" alt="Планета" class="faq__planet">
+
+            <div class="faq__wrapper">
+                <div class="faq__accordion">
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Что такое майнинг криптовалют?
+                        </button>
+                        <div class="faq-item__text">
+                            Криптовалюты добывается оборудованием для майнинга, которое используют свои вычислительные
+                            мощности для возможности обработки транзакций и получения вознаграждений. Точнее говоря,
+                            майнинг - это процесс записи транзакций в блокчейн и получение
+                            за это вознаграждения.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Что такое хэшрейт?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, et expedita libero deleniti,
+                            corrupti perferendis quos veniam, autem accusantium laborum nemo id pariatur? Qui
+                            voluptatibus nulla molestias? Mollitia, aperiam at.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Что такое пул для майнинга?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Сколько я заработаю?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Как начать работать с сервисом?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Как это работает?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Зачем мне регистрироваться
+                            на стороннем пуле?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Почему я не могу получать сразу выплаты с вашего сервиса?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__title">
+                            Какие преимущества нашего сервиса облачного майнинга перед другими?
+                        </button>
+                        <div class="faq-item__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat blanditiis voluptas
+                            inventore sapiente id soluta eum facilis, maiores natus eaque aspernatur possimus illo at
+                            magnam numquam adipisci quod est.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="faq__mail">
+                    <div class="faq__mail__title">
+                        Остались вопросы
+                        и нужна помощь?
+                    </div>
+                    <div class="faq__mail__subtitle">
+                        Напишите нам на <a href="#">почту</a> и мы постараемся решить ваш вопрос
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="connect">
+        <div class="container">
+            <img src="./img/Connect/bg-spot.png" alt="Фон" class="connect__bg">
+            <h2 class="connect__title">
+                Как с нами связаться?
+            </h2>
+            <div class="connect__subtitle">
+                Если у вас остались вопросы мы с радостью ответим на них, а так же подробнее расскажем
+                о нашем продукте.
+            </div>
+
+            <form action="#file" class="connect__form">
+                <input type="text" name="name" placeholder="Ваше имя" id="name">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                <input type="number" name="phone" id="phone" placeholder="Номер телефона">
+
+
+                <div class="connect__conditions">
+                    <label class="connect__label">
+                        <input type="checkbox" id="checkbox">
+                        <span class="fake__checkbox">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-square"
+                                class="svg-inline--fa fa-check-square fa-w-14 check-style" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z">
+                                </path>
+                            </svg>
+
+                        </span>
+                        Я принимаю условия на <a href="#">обработку персональных данных</a>
+                    </label>
+                    <div class="connect__subconditions">
+                        Обещаем, не передавать информацию 3 лицам
+                    </div>
+                </div>
+
+
+                <button class="connect__btn">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <a href="#intro" class="footer__logo">
+            <img src="./img/icon/logo.svg" alt="Логотип">
+            <div class="footer__logo__text">
+                Open Mining
+            </div>
+        </a>
+
+        <div class="container">
+            <ul class="footer__menu">
+                <li class="footer__column">
+                    <ul class="footer__list">
+                        <li class="footer__menu-item footer__menu-item--title">
+                            О проекте
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Вход</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Регистрация</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="footer__column footer__column--tariffs">
+                    <ul class="footer__list">
+                        <li class="footer__menu-item footer__menu-item--title">
+                            Тарифы
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Предложение</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Оферта</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="footer__column footer__column--faq">
+                    <ul class="footer__list">
+                        <li class="footer__menu-item footer__menu-item--title">
+                            FAQ
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Тарифы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="">Оплата</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="footer__column">
+                    <ul class="footer__list">
+                        <li class="footer__menu-item footer__menu-item--title">
+                            Контакты
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="tel:+88009200000">8 800 920 00 00</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#">honest@maning.ru</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="footer__social">
+            <div id="facebook">
+                <a href="">
+                    <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div id="instagram">
+                <a href="">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect y="0.000244141" width="22" height="22.0001" fill="url(#pattern0)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.025641 0.025)" />
+                            </pattern>
+                            <image id="image0" width="39" height="40"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <img src="./img/Footer/spot-left.png" alt="Фон" class="footer__spot-left">
+        <img src="./img/Footer/spot-right.png" alt="Фон" class="footer__spot-right">
+
+        <div class ="author">© 2020 Honest Mining</div>
+    </footer>
+
+
+    <script defer src="./js/currentHeightAdv.js"></script>
+   
+</body>
+
+</html>
