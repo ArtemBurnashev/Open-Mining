@@ -192,7 +192,7 @@ function prettify(num) {
 
 function request(elem, input) {
 
-  fetch("https://api.nomics.com/v1/currencies/ticker?key=f85bec304dca51caaf857f737e9603d96e299567&ids=BTC,LTC,ETH,RPL&interval=1d&convert=RUB&per-page=100&page=1").then(function (response) {
+  fetch("https://api.nomics.com/v1/currencies/ticker?key=f85bec304dca51caaf857f737e9603d96e299567&ids=BTC,LTC,ETH,RPL&interval=1d&convert=RUB&per-page=100&page=1", {mode: 'cors'}).then(function (response) {
     return response.json();
   }).then(function (data) {
     var payLastChild = elem.querySelector(".income__curren-days").textContent;
